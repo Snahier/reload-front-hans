@@ -1,17 +1,23 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
+import { ButtonProps } from "."
 
-interface Props {
-  backgroundColor?: string
-  textColor?: string
-}
-
-export const ButtonContainer = styled.button<Props>`
+export const ButtonContainer = styled.button<ButtonProps>`
   border: none;
-  border-radius: 8px;
-  padding: 0.7rem 3rem;
+
+  ${(props) =>
+    props.round
+      ? css`
+          border-radius: 50%;
+          min-width: 35px;
+          min-height: 35px;
+        `
+      : css`
+          border-radius: 8px;
+          padding: 0.7rem 3rem;
+        `}
 
   background: ${(props) =>
     props.backgroundColor ? props.backgroundColor : "#15d4d4"};
 
-  color: ${(props) => (props.textColor ? props.textColor : "#fff")};
+  color: ${(props) => (props.color ? props.color : "#fff")};
 `
