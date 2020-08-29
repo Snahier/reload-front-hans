@@ -6,6 +6,7 @@ export const ButtonContainer = styled.button<ButtonProps>`
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 
   ${(props) =>
     props.round
