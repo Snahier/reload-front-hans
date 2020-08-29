@@ -3,6 +3,7 @@ import styled from "styled-components"
 export const GraphicsContainer = styled.div`
   grid-area: graphics;
   justify-self: center;
+  margin-bottom: 5rem;
 
   color: ${(props) => props.theme.gray};
 
@@ -20,6 +21,7 @@ export const GraphicsContainer = styled.div`
   .second-section {
     display: grid;
     grid-template-columns: 1.2fr 2fr;
+    grid-template-rows: 350px;
     gap: 1rem;
 
     margin-top: 1rem;

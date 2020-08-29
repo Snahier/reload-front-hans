@@ -1,11 +1,7 @@
-import styled, { keyframes } from "styled-components"
+import styled, { keyframes, css } from "styled-components"
+import { BarProgressProps } from "."
 
-interface Props {
-  percentage: number
-  label: string
-}
-
-function fillBar(props: Props) {
+function fillBar(props: BarProgressProps) {
   return keyframes`
     from {
       width: 0%
@@ -16,21 +12,31 @@ function fillBar(props: Props) {
   `
 }
 
-export const BarProgressContainer = styled.div<Props>`
-  display: flex;
+export const BarProgressContainer = styled.div<BarProgressProps>`
+  display: grid;
+  grid-template-columns: 3rem 1fr;
   align-items: center;
 
-  .percentage {
-    margin-right: 1rem;
-  }
   .barContainer {
     position: relative;
     width: 100%;
     height: 2rem;
 
+    ${(props) =>
+      props.barBackgroundColor
+        ? css`
+            background: ${props.barBackgroundColor};
+          `
+        : css`
+            background: linear-gradient(to right, #ebeced, #fff);
+          `}
+
     border-radius: 4px;
-    border: 1px solid #e7e8e9;
-    background: linear-gradient(to right, #ebeced, #fff);
+    ${(props) =>
+      !props.noBorder &&
+      css`
+        border: 1px solid #e7e8e9;
+      `};
 
     div.label {
       position: absolute;
@@ -58,7 +64,8 @@ export const BarProgressContainer = styled.div<Props>`
 
       height: 100%;
 
-      background: #0000ff50;
+      background: ${(props) =>
+        props.barColor ? props.barColor : props.theme.secondary};
       border-radius: 4px;
     }
   }
