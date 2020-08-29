@@ -22,6 +22,11 @@ export const ButtonContainer = styled.button<ButtonProps>`
 
   background: ${(props) =>
     props.backgroundColor ? props.backgroundColor : "#15d4d4"};
+  transition: all 0.2s;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
 
   color: ${(props) => (props.color ? props.color : "#fff")};
 `
