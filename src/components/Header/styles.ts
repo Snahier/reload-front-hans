@@ -18,7 +18,7 @@ export const HeaderContainer = styled.nav`
     `
   )}
 
-  background: skyblue;
+  background: #4A54DF;
 `
 
 export const Logo = styled.img`
