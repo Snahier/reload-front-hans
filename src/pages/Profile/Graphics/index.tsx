@@ -1,6 +1,7 @@
 import React from "react"
 import { GraphicsContainer } from "./styles"
 import AirQuality from "../../../components/AirQuality"
+import BiomarkerPriorities from "../../../components/BiomarkerPriorities"
 
 interface GraphicsProps {}
 
@@ -9,7 +10,7 @@ const Graphics: React.FC<GraphicsProps> = () => {
     <GraphicsContainer className="container">
       <div className="first-section">
         <AirQuality />
-        <div>Bio marker priorities</div>
+        <BiomarkerPriorities />
         <div>Health goals and symptoms</div>
       </div>
       <div className="second-section">

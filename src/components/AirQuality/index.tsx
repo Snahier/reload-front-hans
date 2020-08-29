@@ -12,7 +12,7 @@ import {
 } from "./styles"
 import { DropletHalf } from "@styled-icons/bootstrap"
 import Separator from "../Separator"
-import CircleProgress from "../CircleProgress"
+import CircleProgress from "../../Charts/CircleProgress"
 
 interface AirQualityProps {}
 

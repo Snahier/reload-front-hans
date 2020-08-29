@@ -9,7 +9,7 @@ export const GraphicsContainer = styled.div`
   .first-section {
     display: grid;
     grid-template-columns: 0.7fr 1fr 0.5fr;
-    grid-template-rows: 300px;
+    grid-template-rows: 350px;
     gap: 1rem;
 
     & > * {

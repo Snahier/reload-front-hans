@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import { CircleProgressContainer } from "./styles"
 
 interface CircleProgressProps {
@@ -6,24 +6,14 @@ interface CircleProgressProps {
 }
 
 const CircleProgress: React.FC<CircleProgressProps> = ({ percentage }) => {
-  const [value, setValue] = useState(1)
-
-  useEffect(() => {
-    for (let index = 1; index <= percentage; index++) {
-      setTimeout(() => {
-        setValue(index)
-      }, 100)
-    }
-  }, [])
-
   return (
-    <CircleProgressContainer percentage={value}>
+    <CircleProgressContainer percentage={percentage}>
       <div className="percentage">
         <svg>
           <circle cx="70" cy="70" r="70" />
           <circle cx="70" cy="70" r="70" />
         </svg>
-        <div className="number">{value}%</div>
+        <div className="number">{percentage}%</div>
       </div>
     </CircleProgressContainer>
   )
