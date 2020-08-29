@@ -4,7 +4,7 @@ import { screen } from "../../styles/mixins"
 export const HeaderContainer = styled.nav`
   display: grid;
   grid:
-    "logo links content" 4rem
+    "logo links content" max-content
     / max-content 1.5fr 1fr;
   align-items: center;
 
@@ -24,10 +24,13 @@ export const HeaderContainer = styled.nav`
 export const Logo = styled.img`
   grid-area: logo;
   padding: 1rem;
+  margin-right: 3rem;
 `
 
 export const Links = styled.ul`
   grid-area: links;
+  padding: 0.5rem;
+  height: 100%;
 
   display: flex;
   ${screen(
@@ -38,9 +41,47 @@ export const Links = styled.ul`
   )}
 
   li {
-    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
     list-style-type: none;
     margin-right: 3rem;
+
+    img {
+      margin-right: 0.5rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: #3092dc;
+      transition: color 0.2s;
+    }
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      width: 2rem;
+      height: 2px;
+
+      background: transparent;
+
+      transition: background-color 0.2s;
+    }
+
+    &:hover {
+      a {
+        color: #fff;
+      }
+      &::before {
+        background: #fff;
+      }
+    }
   }
 `
 
