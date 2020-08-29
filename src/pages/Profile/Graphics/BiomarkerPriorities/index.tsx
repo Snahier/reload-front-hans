@@ -1,7 +1,7 @@
 import React from "react"
 import { BiomarkerPrioritiesContainer, Graphics } from "./styles"
-import Button from "../Button"
-import BarProgress from "../../Charts/BarProgress"
+import Button from "../../../../components/Button"
+import BarProgress from "../../../../Charts/BarProgress"
 
 interface BiomarkersPrioritiesProps {}
 

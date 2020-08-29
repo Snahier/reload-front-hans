@@ -1,7 +1,7 @@
 import React from "react"
 import { GraphicsContainer } from "./styles"
-import AirQuality from "../../../components/AirQuality"
-import BiomarkerPriorities from "../../../components/BiomarkerPriorities"
+import AirQuality from "./AirQuality"
+import BiomarkerPriorities from "./BiomarkerPriorities"
 
 interface GraphicsProps {}
 

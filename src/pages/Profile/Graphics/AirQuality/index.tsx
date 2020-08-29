@@ -11,8 +11,8 @@ import {
   ClimateQuality,
 } from "./styles"
 import { DropletHalf } from "@styled-icons/bootstrap"
-import Separator from "../Separator"
-import CircleProgress from "../../Charts/CircleProgress"
+import Separator from "../../../../components/Separator"
+import CircleProgress from "../../../../Charts/CircleProgress"
 
 interface AirQualityProps {}
 
