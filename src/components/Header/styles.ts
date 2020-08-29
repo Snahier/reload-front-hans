@@ -25,11 +25,12 @@ export const Logo = styled.img`
   grid-area: logo;
   padding: 1rem;
   margin-right: 3rem;
+  margin-left: 1.5rem;
 `
 
 export const Links = styled.ul`
   grid-area: links;
-  padding: 0.5rem;
+  padding: 1rem;
   height: 100%;
 
   display: flex;
