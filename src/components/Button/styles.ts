@@ -3,6 +3,9 @@ import { ButtonProps } from "."
 
 export const ButtonContainer = styled.button<ButtonProps>`
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   ${(props) =>
     props.round

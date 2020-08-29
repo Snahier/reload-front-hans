@@ -5,6 +5,7 @@ import Button from "../Button"
 import { ChatDotsFill } from "@styled-icons/bootstrap"
 import ProfileSettings from "../ProfileSettings"
 import Links from "./Links"
+import chatIcon from "../../assets/chat_icon.svg"
 
 interface HeaderProps {}
 
@@ -17,7 +18,7 @@ const Header: React.FC<HeaderProps> = () => {
 
       <Content>
         <Button backgroundColor="#3092DC" round>
-          <ChatDotsFill color="#fff" width={16} height={16} />
+          <img color="#fff" width={16} height={16} src={chatIcon} alt="Chat" />
         </Button>
 
         <Button>Assessment</Button>
