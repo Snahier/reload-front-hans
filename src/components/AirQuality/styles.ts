@@ -76,6 +76,8 @@ export const UVRays = styled.div`
     "uvGraphic details" 1fr
     /1fr 2fr;
   align-items: center;
+
+  padding-left: 2rem;
 `
 export const InfoWrapper = styled.div`
   grid-area: details;

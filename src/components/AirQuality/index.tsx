@@ -12,6 +12,7 @@ import {
 } from "./styles"
 import { DropletHalf } from "@styled-icons/bootstrap"
 import Separator from "../Separator"
+import CircleProgress from "../CircleProgress"
 
 interface AirQualityProps {}
 
@@ -32,7 +33,7 @@ const AirQuality: React.FC<AirQualityProps> = () => {
       <Separator color="#eceaf1" />
 
       <UVRays>
-        <div>graph image</div>
+        <CircleProgress percentage={70} />
         <InfoWrapper>
           <UVRaysTitle>UV Rays</UVRaysTitle>
           <Cards>
