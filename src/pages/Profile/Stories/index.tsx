@@ -18,7 +18,7 @@ const Stories: React.FC<StoriesProps> = () => {
       <InteractionList>
         <KeyboardArrowLeft width={30} color={theme.white} />
         {[1, 2, 3, 4, 5].map((interaction) => (
-          <Interaction />
+          <Interaction key={interaction} />
         ))}
         <KeyboardArrowRight width={30} color={theme.white} />
       </InteractionList>
