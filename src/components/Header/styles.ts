@@ -40,9 +40,14 @@ export const Links = styled.ul`
   li {
     text-decoration: none;
     list-style-type: none;
+    margin-right: 3rem;
   }
 `
 
 export const Content = styled.div`
   grid-area: content;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 `

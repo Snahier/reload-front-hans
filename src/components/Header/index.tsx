@@ -1,6 +1,7 @@
 import React from "react"
 import { HeaderContainer, Links, Logo, Content } from "./styles"
 import reloadLogo from "../../assets/reload_logo.svg"
+import Button from "../Button"
 
 interface HeaderProps {}
 
@@ -9,12 +10,16 @@ const Header: React.FC<HeaderProps> = () => {
     <HeaderContainer>
       <Logo src={reloadLogo} />
       <Links>
-        <li>link 1</li>
-        <li>link 2</li>
-        <li>link 3</li>
-        <li>link 4</li>
+        <li>Biomarkers</li>
+        <li>Nutrition</li>
+        <li>Lifestyle</li>
+        <li>Recommendation</li>
       </Links>
-      <Content>asd</Content>
+      <Content>
+        <div>chat icon</div>
+        <Button>Assessment</Button>
+        <div>Profile settings</div>
+      </Content>
     </HeaderContainer>
   )
 }
