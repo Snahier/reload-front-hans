@@ -1,12 +1,11 @@
 import React from "react"
 import { BrowserRouter, Route } from "react-router-dom"
+import Profile from "./Profile"
 
 const Routes: React.FC = () => {
   return (
     <BrowserRouter>
-      <Route path="/" exact>
-        <h1>Hello World</h1>
-      </Route>
+      <Route path="/" exact component={Profile} />
     </BrowserRouter>
   )
 }
