@@ -17,7 +17,7 @@ const Header: React.FC<HeaderProps> = () => {
 
       <Content>
         <Button backgroundColor="#3092DC" round>
-          <ChatDotsFill color="#fff" />
+          <ChatDotsFill color="#fff" width={16} height={16} />
         </Button>
 
         <Button>Assessment</Button>
