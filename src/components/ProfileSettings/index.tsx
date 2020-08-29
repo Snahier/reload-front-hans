@@ -11,7 +11,7 @@ const ProfileSettings: React.FC<ProfileSettingsProps> = () => {
         src="https://images.pexels.com/photos/736716/pexels-photo-736716.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
         alt=""
       />
-      <ThreeDotsVertical width={16} color="#fff" />
+      <ThreeDotsVertical width={16} color="#3092DC" />
     </ProfileSettingsContainer>
   )
 }
