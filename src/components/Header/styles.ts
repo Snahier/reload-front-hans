@@ -2,6 +2,7 @@ import styled, { css } from "styled-components"
 import { screen } from "../../styles/mixins"
 
 export const HeaderContainer = styled.nav`
+  grid-area: navbar;
   display: grid;
   grid:
     "logo links content" max-content
@@ -18,7 +19,7 @@ export const HeaderContainer = styled.nav`
     `
   )}
 
-  background: #4A54DF;
+  background: #00000025;
 `
 
 export const Logo = styled.img`

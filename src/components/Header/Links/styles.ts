@@ -3,8 +3,14 @@ import { screen } from "../../../styles/mixins"
 
 export const LinksContainer = styled.ul`
   grid-area: links;
-  padding: 1rem;
+
   height: 100%;
+  ${screen(
+    "desktop",
+    css`
+      padding: 1rem;
+    `
+  )}
 
   display: flex;
   ${screen(

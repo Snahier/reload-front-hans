@@ -1,6 +1,8 @@
 import styled from "styled-components"
 
 export const ProfileSettingsContainer = styled.div`
+  grid-area: content;
+
   display: flex;
   align-items: center;
 
